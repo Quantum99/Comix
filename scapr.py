@@ -12,6 +12,7 @@ browser.implicitly_wait(60)
 load = ui.WebDriverWait(browser, 10)
 
 def main():
+    # Enter site url here
     browser.get("http://kissmanga.com/Manga/Naruto")
     load.until(lambda browser: browser.find_element_by_class_name('listing'))
     browser.save_screenshot('screen1.png')
